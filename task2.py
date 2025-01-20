@@ -9,6 +9,6 @@ with open('task2complete.csv', mode='w', newline='') as csv_write:
             csv_reader = csv.reader(csv_file, delimiter=',')
             for row in csv_reader:
                 if row[0] == "pink morsel":
-                    writer.writerow({'sales': f'${float(row[1][1:]) * int(row[2])}', 'date': row[3], 'region': row[4]})
+                    writer.writerow({'sales': f'{float(row[1][1:]) * int(row[2])}', 'date': row[3], 'region': row[4]})
 
     
